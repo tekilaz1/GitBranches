@@ -1,0 +1,86 @@
+
+
+
+
+
+#boxs {
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 2vw;
+justify-items: center;
+align-content: center;
+height: 100vh; 
+
+}
+
+.box {
+    width: 100px;
+    height: 150px;
+    background-color: rgb(21, 185, 21);
+    color: rgb(200, 255, 0);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    background-color: red;
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+      "s m m m"
+      "s m m m"
+      "s m m m"
+      "f f f f";
+
+    
+}
+.head{
+    grid-area: h;
+    background-color: rgb(20, 50, 30);
+    
+    
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: rgb(96, 230, 44);
+
+}
+
+.main{
+    grid-area: m;
+    background-color: rgb(28, 221, 235);
+    
+
+}
+
+.foot{
+    grid-area: f;
+    background-color: rgb(192, 113, 119);
+}
